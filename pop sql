@@ -3,17 +3,17 @@ CREATE TABLE student(
     name VARCHAR(26),
     major VARCHAR(20)
 );
-
+//show the table
 DESCRIBE student;
-
+// delete table
 DROP TABLE student;
-
+//change table
 ALTER TABLE student ADD gpa DECIMAL(3,2);
 
 ALTER TABLE student DROP COLUMN gpa
 
 
-
+//inserting data
 SELECT * FROM student;
 INSERT INTO student(student_id, name) VALUES( 3, 'Claire'
 
