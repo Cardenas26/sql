@@ -102,3 +102,7 @@ FROM employee;
 // finding the sum of employee salary
 SELECT SUM(salary)
 FROM employee;
+// more specific data searches 
+SELECT COUNT(sex), sex
+FROM employee
+GROUP BY sex;
