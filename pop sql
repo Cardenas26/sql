@@ -106,3 +106,7 @@ FROM employee;
 SELECT COUNT(sex), sex
 FROM employee
 GROUP BY sex;
+// wildcards: % searches data, name ending with"string/int "
+SELECT *
+FROM client
+WHERE client_name LIKE '%LLC';
