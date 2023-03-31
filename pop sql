@@ -81,3 +81,8 @@ CREATE TABLE branch_supplier (
 //Find all employees order by salary:
 SELECT * FROM employee
 ORDER by salary;
+
+
+// changes the name of retrieved data
+SELECT  first_name AS Forname, last_name AS Surname
+FROM employee;
