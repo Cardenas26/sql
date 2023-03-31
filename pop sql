@@ -117,3 +117,11 @@ WHERE client_name LIKE '%LLC';
 SELECT *
 FROM employee
 WHERE birth_day LIKE '____-10%';
+
+// combining 2 selects into 1
+SELECT first_name
+FROM employee
+UNION
+SELECT branch_name
+FROM branch;
+ 
