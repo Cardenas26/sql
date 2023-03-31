@@ -18,3 +18,18 @@ SELECT * FROM student;
 INSERT INTO student(student_id, name) VALUES( 3, 'Claire'
 
 );
+
+
+// auto increment
+CREATE TABLE student(
+    student_id INT AUTO_INCREMENT,
+    name VARCHAR(26),
+    major VARCHAR(20),
+    PRIMARY KEY(student_id)
+);
+
+SELECT * FROM student;
+INSERT INTO student(name, major) VALUES('Jack', 'Biology');
+INSERT INTO student(name, major) VALUES('Kate', 'Sociology');
+
+
