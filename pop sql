@@ -99,3 +99,6 @@ WHERE sex= 'F' AND birth_day > '1970-01-01';
 // finding the average of a integer ( average of employee salary)
 SELECT AVG(salary)
 FROM employee;
+// finding the sum of employee salary
+SELECT SUM(salary)
+FROM employee;
