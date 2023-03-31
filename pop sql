@@ -32,4 +32,14 @@ SELECT * FROM student;
 INSERT INTO student(name, major) VALUES('Jack', 'Biology');
 INSERT INTO student(name, major) VALUES('Kate', 'Sociology');
 
+//updating data
+UPDATE student
+SET major='Bio'
+WHERE major = 'Biology';
+
+
+UPDATE student
+SET name = 'Cesar', major = 'undecided'
+WHERE student_id=1;
+
 
