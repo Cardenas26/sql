@@ -42,4 +42,9 @@ UPDATE student
 SET name = 'Cesar', major = 'undecided'
 WHERE student_id=1;
 
+// deleting data
+DELETE FROM student 
+WHERE student_id=2;
+
+
 
