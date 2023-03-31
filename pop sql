@@ -86,3 +86,7 @@ ORDER by salary;
 // changes the name of retrieved data
 SELECT  first_name AS Forname, last_name AS Surname
 FROM employee;
+
+// special function that counts total number of data
+SELECT COUNT(emp_id)
+FROM employee; 
