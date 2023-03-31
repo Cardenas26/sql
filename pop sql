@@ -90,3 +90,8 @@ FROM employee;
 // special function that counts total number of data
 SELECT COUNT(emp_id)
 FROM employee; 
+
+// selecting specific data (females born after 1970)
+SELECT COUNT(emp_id)
+FROM employee
+WHERE sex= 'F' AND birth_day > '1970-01-01';
