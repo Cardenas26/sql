@@ -77,3 +77,7 @@ CREATE TABLE branch_supplier (
   // -- adding composite key --> // PRIMARY KEY(branch_id, supplier_name),
   FOREIGN KEY(branch_id) REFERENCES branch(branch_id) ON DELETE CASCADE
 );
+
+//Find all employees order by salary:
+SELECT * FROM employee
+ORDER by salary;
