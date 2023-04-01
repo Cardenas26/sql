@@ -143,3 +143,12 @@ WHERE employee.emp_id IN(
 
 // on delete set null ( deletes data but keeps it on the table as null)
 //on delete set cascade( deletes data & removes it completley from table)
+// triggers
+DELIMITER $$
+CREATE
+    TRIGGER my_trigger BEFORE INSERT
+    ON employee
+    FOR EACH ROW BEGIN
+        INSERT INTO trigger_test VALUES('added new employee');
+        END $$
+DELIMTER ;
