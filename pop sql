@@ -140,3 +140,6 @@ WHERE employee.emp_id IN(
     FROM works_with
     WHERE works_with.total_sales > 30000
 )
+
+// on delete set null ( deletes data but keeps it on the table as null)
+//on delete set cascade( deletes data & removes it completley from table)
