@@ -152,3 +152,19 @@ CREATE
         INSERT INTO trigger_test VALUES('added new employee');
         END $$
 DELIMTER ;
+
+// else if trigger
+DELIMITER $$
+CREATE
+    TRIGGER my_trigger BEFORE INSERT
+    ON employee
+    FOR EACH ROW BEGIN
+        IF NEW.sex='M' THEN
+            INSERT INTO trigger_test VALUES('added male employee');
+        ELSEIF NEW.sex='F' THEN
+            INSERT INTO trigger_test VALUES ('added female employee');
+        ELSE
+        INSERT INTO trigger_test VALUES('added new employee');
+        END if;
+        END $$
+DELIMTER ;
